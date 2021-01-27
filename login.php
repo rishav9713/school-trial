@@ -4,16 +4,15 @@ $password=$_POST["password"];//receiving password field value in $password varia
   
 echo "Welcome: $name, your password is: $password";  
 
-firebase.auth().createUserWithEmailAndPassword(name, password)
+firebase.auth().signInWithEmailAndPassword(email, password)
   .then((userCredential) => {
-    // Signed in 
+    // Signed in
     var user = userCredential.user;
     // ...
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ..
   });
 
 ?>  
