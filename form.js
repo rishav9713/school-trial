@@ -67,7 +67,7 @@
         
 
   			//Take user to a different or home page
-        window.location.replace("rdxcreationx.tech");
+        window.location.replace("www.rdxcreationx.tech");
   			//is signed in
 
   		}else{
