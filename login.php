@@ -6,6 +6,7 @@ echo "Welcome: $name, your password is: $password";
 
 firebase.auth().signInWithEmailAndPassword(email, password)
   .then((userCredential) => {
+    echo "Welcome: $name, your password is: $password";  
     // Signed in
     var user = userCredential.user;
     // ...
